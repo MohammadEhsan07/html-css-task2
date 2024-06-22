@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A colorful and accessible webpage created using semantic HTML and CSS.">
+    <title>Colorful Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+            color: #333;
+        }
+
+        /* Navigation Styles */
+        header {
+            background: linear-gradient(to right, #ff6f61, #ff8a65);
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+            padding: 2em;
+            border-radius: 8px;
+        }
+
+        #home {
+            background: linear-gradient(to right, #87ceeb, #00bfff);
+            color: white;
+        }
+
+        #about {
+            background: linear-gradient(to right, #ff7f50, #ff6347);
+            color: white;
+        }
+
+        #services {
+            background: linear-gradient(to right, #32cd32, #3cb371);
+            color: white;
+        }
+
+        #contact {
+            background: linear-gradient(to right, #8a2be2, #9370db);
+            color: white;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(to right, #4682b4, #5f9ea0);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5em 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: linear-gradient(to bottom, #fffaf0, #e0ffff);
+                color: #222;
+            }
+
+            header {
+                background: linear-gradient(to right, #ff8a65, #ffab91);
+            }
+
+            #home {
+                background: linear-gradient(to right, #00bfff, #1e90ff);
+            }
+
+            #about {
+                background: linear-gradient(to right, #ff6347, #ff4500);
+            }
+
+            #services {
+                background: linear-gradient(to right, #3cb371, #2e8b57);
+            }
+
+            #contact {
+                background: linear-gradient(to right, #9370db, #7b68ee);
+            }
+
+            footer {
+                background: linear-gradient(to right, #5f9ea0, #4682b4);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background: linear-gradient(to bottom, #faf0e6, #f0fff0);
+                color: #111;
+            }
+
+            header {
+                background: linear-gradient(to right, #ffab91, #ffccbc);
+            }
+
+            #home {
+                background: linear-gradient(to right, #1e90ff, #4682b4);
+            }
+
+            #about {
+                background: linear-gradient(to right, #ff4500, #dc143c);
+            }
+
+            #services {
+                background: linear-gradient(to right, #2e8b57, #228b22);
+            }
+
+            #contact {
+                background: linear-gradient(to right, #7b68ee, #6a5acd);
+            }
+
+            footer {
+                background: linear-gradient(to right, #4682b4, #87cefa);
+            }
+        }
+
+        @media (max-width: 360px) {
+            body {
+                background: linear-gradient(to bottom, #f0fff0, #f5fffa);
+                color: #000;
+            }
+
+            header {
+                background: linear-gradient(to right, #ffccbc, #ffe0b2);
+            }
+
+            #home {
+                background: linear-gradient(to right, #4682b4, #5f9ea0);
+            }
+
+            #about {
+                background: linear-gradient(to right, #dc143c, #c71585);
+            }
+
+            #services {
+                background: linear-gradient(to right, #228b22, #006400);
+            }
+
+            #contact {
+                background: linear-gradient(to right, #6a5acd, #483d8b);
+            }
+
+            footer {
+                background: linear-gradient(to right, #87cefa, #b0e0e6);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Colorful Webpage</h1>
+            <p>This is an example of a webpage that uses semantic HTML and CSS to create a visually appealing and accessible user experience.</p>
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best web solutions using modern technologies and best practices.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a variety of web development services to meet your needs, from design to implementation and maintenance.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to work with us, feel free to get in touch!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Colorful Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
